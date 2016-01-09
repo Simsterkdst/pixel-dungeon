@@ -38,7 +38,7 @@ import com.watabou.utils.Bundle;
 
 public enum HeroClass {
 
-	WARRIOR( "warrior" ), MAGE( "mage" ), ROGUE( "rogue" ), HUNTRESS( "huntress" );
+	WARRIOR( "Krieger" ), MAGE( "Magier" ), ROGUE( "Schurke" ), HUNTRESS( "Jägerin" );
 	
 	private String title;
 	
@@ -47,11 +47,11 @@ public enum HeroClass {
 	}
 	
 	public static final String[] WAR_PERKS = {
-		"Warriors start with 11 points of Strength.",
-		"Warriors start with a unique short sword. This sword can be later \"reforged\" to upgrade another melee weapon.",
-		"Warriors are less proficient with missile weapons.",
-		"Any piece of food restores some health when eaten.",
-		"Potions of Strength are identified from the beginning.",
+		"Der Krieger startet mit 11 Punkten Stärke.",
+		"Der Krieger startet mit einem einzigartigen Schwert. Dieses Schwert kann später \"reforged\" um eine andere Waffe zu verbessern.",
+		"Der Krieger ist weniger gut mit Fernkampfwaffen.",
+		"Jedes Stück Essen gibt dir ein bisschen Leben zurück.",
+		"Stärketränke sind vom Anfang an identifiziert.",
 	};
 	
 	public static final String[] MAG_PERKS = {
