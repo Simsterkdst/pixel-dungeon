@@ -38,15 +38,15 @@ public class Armor extends EquipableItem {
 	
 	private static final int HITS_TO_KNOW	= 10;
 	
-	private static final String TXT_EQUIP_CURSED	= "your %s constricts around you painfully";
+	private static final String TXT_EQUIP_CURSED	= "Dein %s engt dich Schmerzhaft ein";
 		
-	private static final String TXT_IDENTIFY	= "you are now familiar enough with your %s to identify it. It is %s.";
+	private static final String TXT_IDENTIFY	= "Du bist nun vertraut genug mit %s Um es zu identifizieren. Es ist %s.";
 	
 	private static final String TXT_TO_STRING	= "%s :%d";
-	private static final String TXT_BROKEN		= "broken %s :%d";
+	private static final String TXT_BROKEN		= "zerbrochen %s :%d";
 	
 	private static final String TXT_INCOMPATIBLE = 
-		"Interaction of different types of magic has erased the glyph on this armor!";
+		"Zusammenspiel verschiedener Arten von Magie hat die Glyphe auf dieser Rüstung gelöscht!";
 	
 	public int tier;
 	public int STR;
@@ -220,14 +220,14 @@ public class Armor extends EquipableItem {
 		
 		if (levelKnown) {
 			info.append( 
-				"\n\nThis " + name + " provides damage absorption up to " +
-				"" + Math.max( DR(), 0 ) + " points per attack. " );
+				"\n\nThis " + name + " Bietet Schadensabsorption bis zu " +
+				"" + Math.max( DR(), 0 ) + " Punkte pro Angriff. " );
 			
 			if (STR > Dungeon.hero.STR()) {
 				
 				if (isEquipped( Dungeon.hero )) {
 					info.append( 
-						"\n\nBecause of your inadequate strength your " +
+						"\n\nAufgrund deiner unzureichenden Stärke ist" +
 						"movement speed and defense skill is decreased. " );
 				} else {
 					info.append( 
